@@ -1,13 +1,125 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.main{
+  background-color:rgb(15, 23, 61);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main img{
+  width: 5%;
+  height: 13%;
+}
+.main p{
+  color: white;
+  font-size: 0.9rem;
+  font-weight:lighter;
+  margin: 15px 0;
+}
+.search{
+  width: 240px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.search input{
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  width: 220px;
+  font-size: 0.7rem;
+}
+i.fa.fa-plus{
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: rgb(109, 108, 108);
+}
+i.fa.fa-plus:hover{
+  color: rgb(21, 209, 52);
+}
+#edit_itemd{
+  color: rgb(21, 209, 52);
+}
+i.fa-regular.fa-trash-can{
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+i.fa-solid.fa-pen-to-square{
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 7px;
+}
+#list{
+  margin-top: 5px;
+  justify-content: space-between;
+  background-color: rgb(117, 79, 255);
+  color: white;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+#list:hover{
+background-color: white;
+color: rgb(117, 79, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#list:hover i.fa-regular.fa-trash-can{
+  color: rgb(230, 25, 25);
 }
+
+#list:hover i.fa-solid.fa-pen-to-square{
+  color: rgb(21, 209, 52);
+}
+#list:last-child{
+  margin-bottom: 25px;
+}
+button{
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: rgb(109, 108, 108);
+  cursor: pointer;
+}
+button:hover{
+  animation: 1s ease-in alternate-reverse;
+  background-color: rgb(117, 79, 255);
+  color: white;
+}
+/* .hidden{
+  width: 10px;
+  height: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
